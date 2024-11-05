@@ -1,5 +1,7 @@
-import {defineCollection } from "astro:content";
+import {z, defineCollection } from "astro:content";
 
 // https://astro.build/config
-const docs = defineCollection({});
+const docs = defineCollection({
+  editUrl: z.string()
+});
 export const collections = { docs };
